@@ -1,0 +1,158 @@
+body{
+    background-color: #070707;
+    margin-top: 0px;
+    animation: priyan 5s infinite top both;
+    overflow: hidden;
+
+}
+@keyframes priyan {
+    10%{
+        background-color: rgb(10, 240, 10);
+    }
+    20%{
+        background-color: rgb(0, 255, 34);
+    }
+    30%{
+        background-color: rgb(9, 245, 9);
+    }
+    
+}
+
+.container:hover{
+    background-color: greenyellow;
+}
+.container{
+    display: flex;
+    margin: 0px auto;
+    justify-content: space-evenly;
+    margin-top: 3px;
+    animation: priyan 2s  infinite ;
+}
+
+
+    
+.box{
+
+    width: 100px;
+    height: 100px;
+    background-color: hsl(180, 3%, 28%);
+    transition: 1ms;
+}
+.box:hover{
+    background-color: rgb(68, 255, 0);
+}
+
+.loginform{
+   
+    background-color: hsl(180, 3%, 23%);
+    position: absolute;
+    top: 200px;
+    left: 600px;
+    padding: 30px;
+    box-shadow: 2px 2px 30px;
+}
+h1{
+    text-align: center;
+    font-size: 25px;
+    color: rgb(15, 245, 15);
+}
+
+input{
+    background-color: hsl(0, 3%, 23%);
+    height: 30px;
+    width: 250px;
+    margin-top: 20px;
+    box-shadow: 1px 1px 2px rgb(49, 255, 3);
+}
+.input{
+    text-align: center;
+    
+}
+
+.link{
+    max-width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+span{
+    color: rgb(2, 246, 15);
+}
+
+button{
+   
+    padding: 10px 105px;
+    background-color: rgb(12, 236, 12);
+}
+
+.button{
+    max-width: 85%;;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30px;
+}
+
+@media screen and (max-width:1496px) and (min-width:1200px) {
+    .box{
+        width: 95px;
+        height: 95px;
+       
+    }
+    .loginform{
+   
+       
+        top: 200px;
+        left: 500px;
+       
+    }
+} 
+@media screen and (max-width:1200px) and (min-width:900px) {
+    .box{
+        width: 90px;
+        height: 90px;
+       
+    }
+} 
+@media screen and (max-width:900px) and (min-width:600px) {
+    .box{
+        width: 80px;
+        height: 80px;
+       
+    }
+    .box1{
+        display: none;
+    }
+    .loginform{
+   
+       
+        top: 200px;
+        left: 200px;
+       
+    }
+} 
+
+
+@media screen and (max-width:600px){
+    .box{
+        width: 60px;
+        height: 60px;
+       
+    }
+    .box1{
+        display: none;
+    }
+    .loginform{
+   
+       
+        top: 200px;
+        left: 100px;
+       
+    }
+} 
